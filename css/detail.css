@@ -1,0 +1,193 @@
+/* .container {
+    align-items: center;
+    width: 1000px;
+    height: auto;
+    
+    
+} */
+
+.coverblock  {
+    background-color: #fff;
+    height: auto;
+    width: 1000px;
+    border-radius: 15px;
+    box-shadow: 5px 15px 5px #ccc;
+    
+}
+.h1detal{
+    color: #b48608; 
+    font-family: 'Droid serif', serif; 
+    font-size: 60px; 
+    font-weight: 400; 
+    font-style: italic;
+     line-height: 44px; 
+     margin: 0 0 12px; 
+     text-align: center;
+}
+.h1detal:hover{
+    color: #2fcee7; 
+    font-family: 'Droid serif', serif; 
+    font-size: 60px; 
+    font-weight: 400; 
+    font-style: italic;
+     line-height: 44px; 
+     margin: 0 0 12px; 
+     text-align: center;
+}
+.imadetail{
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow:    10px 15px 10px #ccc;
+}
+.imsdetai{
+    border-radius: 15px;
+}
+.h2details{
+    color: #b138d6; 
+    font-family: 'Lobster', cursive; 
+    font-size: 36px; 
+    font-weight: bold;
+     line-height: 48px; 
+     margin: 0 0 18px; 
+     text-shadow: 1px 0 0 #fff; 
+}
+.h1priDet{
+    color: #111; 
+    font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 40px; 
+     font-weight: bold; 
+     line-height: 64px; 
+     margin: 0 0 0; 
+     padding: 20px 30px;
+      text-align: center;
+       text-transform: uppercase;
+}
+.quanDetal{
+    
+    color: #040404; 
+    font-family: 'Orienta', sans-serif;
+     font-size: 16px; 
+     line-height: 24px; 
+     margin: 0 0 24px; 
+     text-align: center;
+     font-weight: bold;
+}
+.DesDetails{
+    color: #040404; 
+    font-family: 'Orienta', sans-serif;
+     font-size: 16px; 
+     line-height: 24px; 
+     margin: 0 0 24px; 
+     text-align: center;
+     font-weight: bold; 
+}
+
+
+
+
+/* CSS */
+.buttCartsh {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttCartsh:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-buttCartsh 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-buttCartsh {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.buttCartsh:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* CSS */
+.backhome{
+    
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #443743;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .backhome:hover,
+  .backhome:focus-visible{
+      font-size: 15px;
+      text-decoration: none;
+      color: #000;
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .backhome:active {
+    background: var(--color);
+    color: #fff;
+  }

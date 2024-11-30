@@ -1,0 +1,79 @@
+/* Đặt các thuộc tính cho body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Đặt các thuộc tính cho tiêu đề */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Đặt các thuộc tính cho khối chứa nội dung */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Đặt các thuộc tính cho tiêu đề của phần */
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Đặt các thuộc tính cho form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Đặt các thuộc tính cho các label */
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Đặt các thuộc tính cho các input và select */
+form input[type="number"],
+form input[type="datetime-local"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Đặt các thuộc tính cho button */
+form button {
+    padding: 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Đặt các thuộc tính cho button khi hover */
+form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Đặt các thuộc tính cho thông báo lỗi */
+p {
+    color: #d9534f;
+    text-align: center;
+    font-weight: bold;
+}
